@@ -54,7 +54,7 @@ class LYXTextFieldAnimation: UIView, UITextFieldDelegate, XIBViewType {
     @IBOutlet weak var undelayLineWidthLayout: NSLayoutConstraint!
     
     
-    //MARK : UITextFieldDelegate
+    // MARK: UITextFieldDelegate
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if placeholderBottomLayout.constant == -3 {
             placeholderBottomLayout.constant = -textField.bounds.height - 3
